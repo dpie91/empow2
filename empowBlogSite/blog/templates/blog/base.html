@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static "css/blog.css" %}" rel="stylesheet">
+</head>
+<body>
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div class="sidebar">
+        <h2>Empow Studios' Blog!</h2>
+        <p>Blog assignment for Empow Studios, where kids ages 7-15 have fun learning coding, robotics, film & animation,
+            Minecraft, engineering, and more! Register today for Summer Camp</p>
+    </div>
+</body>
+</html>
